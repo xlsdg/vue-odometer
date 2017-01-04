@@ -1,7 +1,7 @@
 {
   "name": "vue-odometer",
   "title": "vue-odometer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue.js(v2.x+) component wrap for Odometer.js",
   "author": "xLsDg <xlsdg@qq.com> (https://blog.xlsdg.org/)",
   "homepage": "https://github.com/xlsdg/vue-odometer",
