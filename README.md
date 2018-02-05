@@ -6,7 +6,7 @@
 ## Installation
 
 ``` bash
-$ npm install --save vue-odometer
+$ npm install --save odometer vue-odometer
 ```
 
 
@@ -14,16 +14,16 @@ $ npm install --save vue-odometer
 
 ``` vue
 <template>
-  <div class="iOdometer">
-    <i-odometer
-      class="iOdometer"
-      :value="num"
-    ></i-odometer>
-  </div>
+  <IOdometer
+    class="iOdometer"
+    :value="num"
+  />
 </template>
 
 <script type="text/babel">
   import IOdometer from 'vue-odometer';
+  import 'odometer/themes/odometer-theme-default.css';
+
   export default {
     name: 'view',
     components: {
@@ -37,7 +37,7 @@ $ npm install --save vue-odometer
     mounted() {
       const that = this;
       setInterval(function() {
-        that.num = that.num + 1;
+        that.num += 1;
       }, 3000);
     }
   };
@@ -80,7 +80,7 @@ $ npm install --save vue-odometer
 See more [Odometer.js](http://github.hubspot.com/odometer/)
 
 
-## Static Methods
+## Methods
 
 * `renderInside`
 * `watchForMutations`
@@ -105,15 +105,6 @@ See more [Odometer.js](http://github.hubspot.com/odometer/)
 
 Learn more [Odometer.js](http://github.hubspot.com/odometer/)
 
-
-## Development
-
-``` bash
-$ git clone https://github.com/xlsdg/vue-odometer.git vue-odometer
-$ cd vue-odometer && npm i && npm run dev
-```
-
-Then open `http://localhost:8080/` to see the demo.
 
 # License
 
