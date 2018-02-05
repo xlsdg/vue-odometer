@@ -1,6 +1,6 @@
 {
   "name": "vue-odometer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue.js(v2.x+) component wrap for Odometer.js",
   "keywords": [
     "odometer",
