@@ -25,22 +25,25 @@
     "url": "https://github.com/xlsdg/vue-odometer.git"
   },
   "scripts": {
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
     "build": "webpack --progress --hide-modules"
   },
   "dependencies": {
     "lodash": "latest"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-lodash": "^3.3.2",
-    "babel-preset-env": "^1.6.1",
-    "lodash-webpack-plugin": "^0.11.4",
-    "webpack": "^3.10.0"
+    "babel-core": "latest",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-lodash": "latest",
+    "babel-preset-env": "latest",
+    "lodash-webpack-plugin": "latest",
+    "webpack": "^3.12.0"
   },
   "peerDependencies": {
-    "odometer": "*",
-    "vue": "*"
+    "odometer": "latest",
+    "vue": "latest"
   },
   "title": "vue-odometer"
 }
